@@ -1,7 +1,7 @@
 // Add event listener to the form submit action
 
 document
-  .getElementById("contact-form")
+  .getElementById("sendformid")
   .addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent the default form submission
 
