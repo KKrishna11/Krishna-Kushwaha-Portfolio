@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "parcel index.html",
-    "build": "npm run build"
+    "build": "parcel build index.html"
   },
   "devDependencies": {
     "dotenv": "^16.4.7",
