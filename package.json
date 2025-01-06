@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.7",
+    "parcel": "^2.13.3"
+  },
+  "dependencies": {
+    "emailjs-com": "^3.2.0"
+  }
+}
