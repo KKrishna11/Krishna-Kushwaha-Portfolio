@@ -3,6 +3,7 @@ import grinLogo from './project-assests/grin-smile.png';
 
 //Opening or closing side bar
 
+console.log("Hello World from me");
 const elementToggleFunc = function (elem) {
   elem.classList.toggle("active");
 };
