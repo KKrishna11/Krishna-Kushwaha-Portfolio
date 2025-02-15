@@ -1,5 +1,5 @@
-import hiLogo from './project-assests/hi.png';
-import grinLogo from './project-assests/grin-smile.png';
+import hiLogo from "./project-assests/hi.png";
+import grinLogo from "./project-assests/grin-smile.png";
 
 //Opening or closing side bar
 
@@ -140,34 +140,29 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-
-
-
 let logo = document.getElementById("change-logo");
 
-let logos = [
-    require('./project-assests/hi.png'),
-];
-let mainLogo = require('./project-assests/grin-smile.png');
+let logos = [require("./project-assests/hi.png")];
+let mainLogo = require("./project-assests/grin-smile.png");
 let currentIndex = 0;
 
 logo.src = mainLogo; // Set initial image
 
 setTimeout(() => {
-    function changeLogoSequentially() {
-        if (currentIndex < logos.length) {
-            logo.src = logos[currentIndex];
-            console.log("Changing logo to:", logo.src); // Debugging to confirm
-            currentIndex++;
-            setTimeout(changeLogoSequentially, 5000);
-        } else {
-            logo.src = mainLogo;
-            console.log("Reset to main logo:", logo.src); // Debugging
-        }
+  function changeLogoSequentially() {
+    if (currentIndex < logos.length) {
+      logo.src = logos[currentIndex];
+      console.log("Changing logo to:", logo.src); // Debugging to confirm
+      currentIndex++;
+      setTimeout(changeLogoSequentially, 5000);
+    } else {
+      logo.src = mainLogo;
+      console.log("Reset to main logo:", logo.src); // Debugging
     }
+  }
 
-    // Start the sequence
-    changeLogoSequentially();
+  // Start the sequence
+  changeLogoSequentially();
 }, 3000);
 
 // Parcel cache: Clear the cache with parcel cache clean.
