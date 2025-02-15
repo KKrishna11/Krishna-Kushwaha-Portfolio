@@ -372,18 +372,42 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
-  background: var(--onyx);
+  background: transparent;
   border-radius: 5px;
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
-  background: var(--orange-yellow-crayola);
+  background: transparent;
   border-radius: 5px;
 }
 
 .has-scrollbar::-webkit-scrollbar-button {
   width: 20px;
 }
+
+
+
+
+.has-scrollbar-yellow::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.has-scrollbar-yellow::-webkit-scrollbar-track {
+  background: var(--onyx);
+  border-radius: 5px;
+}
+
+.has-scrollbar-yellow::-webkit-scrollbar-thumb {
+  background: var(--orange-yellow-crayola);
+  border-radius: 5px;
+}
+
+.has-scrollbar-yellow::-webkit-scrollbar-button {
+  width: 20px;
+}
+
+
 
 .content-card {
   position: relative;
